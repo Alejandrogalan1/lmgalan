@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donativos michiweb</title>
+    <link rel="icon" href="../Imagenes/favicon.jpg" type="image/jpg">
+</head>
+
+<body>
+    <div>
+        <h1><strong>Donativos</strong></h1>
+        <p>Muchas gracias por ofrecer tu ayuda a gatos desamparados de Zaragoza a través de una donación. La cuantía
+            íntegra
+            de la donación se destinará a los refugios de la ciudad.</p>
+    </div>
+    <div>
+        <h3><strong>Formulario donativo</strong></h3>
+        <p>Rellena las casillas con tus datos.</p>
+        <form action="http://httpbin.org/get" method="get">
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"><br><br>
+            <label for="primer_apellido">Primer apellido:</label><br>
+            <input type="text" id="primer_apellido" name="primer_apellido"><br><br>
+            <label for="segundo_apellido">Segundo apellido:</label><br>
+            <input type="text" id="segundo_apellido" name="segundo_apellido"><br><br>
+            <label for="DNI">DNI:</label><br>
+            <input type="DNI" name="DNI" pattern="[0-9]{8}[A-Za-z]{1}" id="DNI"
+                title="Debe poner 8 números y una letra"><br><br>
+            <label for="telefono">Teléfono:</label><br>
+            <input type="number" name="telefono" placeholder="123-456-789" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}"
+                id="telefono"><br><br>
+            <label for="correo">Correo electrónico:</label><br>
+            <input type="text" id="correo" name="correo" placeholder="ejemplo@ejemplo.com"><br><br>
+            <fieldset>
+                <legend>Método de pago</legend>
+                <input type="radio" id="transferencia_bancaria" name="forma_pago" value="transferencia_bancaria">
+                <label for="transferencia_bancaria">Transferencia Bancaria</label><br>
+                <input type="radio" id="tarjeta_credito" name="forma_pago" value="tarjeta_credito">
+                <label for="tarjeta_credito">Trajeta de crédito</label><br>
+                <input type="radio" id="paypal" name="forma_pago" value="paypal">
+                <label for="paypal">Paypal</label>
+            </fieldset><br>
+            <label for="cantidad">Cantidad</label><br>
+            <input type="number" name="cantidad" pattern="[0-9]{4}"><br><br>
+            <label for="refugios">Elige un refugio:</label><br>
+            <select id="refuigos" name="refugios">
+                <option value="1">Refugio Actur</option>
+                <option value="2">Refugio Delicias</option>
+                <option value="3">Refugio Casetas</option>
+                <option value="4">Refugio Las Fuentes</option>
+                </option>
+            </select>
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+</body>
+
+</html>
